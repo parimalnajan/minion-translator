@@ -1,2 +1,2 @@
-# Minion-app link:
+link:
 http://minion-paradox.netlify.app
