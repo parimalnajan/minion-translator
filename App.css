@@ -28,6 +28,10 @@ textarea{
     -webkit-text-stroke-width: 0.5px;
     -webkit-text-stroke-color: black; 
 
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+
 }
 
 .subtitle{
@@ -43,4 +47,13 @@ body{
     align-items: center;
     font-family: 'Bebas Neue', cursive;
     background-image: url(https://hdwallpaperim.com/wp-content/uploads/2017/09/16/54765-minions.jpg);
+}
+
+@media(max-width:799px){
+    .title{
+        align-self: baseline;
+    }
+    .title span{
+        display: block;
+    }
 }
