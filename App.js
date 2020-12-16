@@ -1,7 +1,7 @@
 var btnTranslate= document.querySelector("#btn-translate");
 var txtInput= document.querySelector("#txt-input");
 var outputDiv=document.querySelector("#output");
-var errorDiv=document.querySelector("#error");
+
 
 var serverURL="https://api.funtranslations.com/translate/minion.json";
 
@@ -22,7 +22,7 @@ function clickEvenetHandler(){
     fetch(getTranslationURL(txtInput.value))
     .then(response=>response.json()
     .then(json=>{
-        if(response.status===429){
+        if(response.status!==200){
         var err=json.error.message;outputDiv.innerText=err;alert(err)}
         else{
         var translatedText=json.contents.translated;
