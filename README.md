@@ -1,2 +1,2 @@
-# minion
- Js project for levelZero
+link:
+http://minion-paradox.netlify.app
