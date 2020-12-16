@@ -56,4 +56,8 @@ body{
     .title span{
         display: block;
     }
+
+    .textarea{
+        width: 95%;
+    }
 }
